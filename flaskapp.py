@@ -118,7 +118,7 @@ if __name__ == "main__":
 
 from tokenize import triple_quoted
 from flask import Flask, request
-# from flask_cors import CORS
+from flask_cors import CORS
 from index import (getInfo, getCurrentClasses, getPast, getStudentSchedule)
 from fakeData import *
 
@@ -129,7 +129,7 @@ from Crypto.Util.Padding import pad,unpad
 import random, string
 
 app = Flask(__name__)
-# CORS(app)
+CORS(app)
 
 @app.route("/", methods=["GET"])
 def home():
