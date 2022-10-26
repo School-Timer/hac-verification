@@ -38,7 +38,7 @@ def createRequestPayload(username, password, requestVerificationToken):
         "__RequestVerificationToken" : requestVerificationToken,
         "SCKTY00328510CustomEnabled" : "False",
         "SCKTY00436568CustomEnabled" : "False",
-        "Database" : "320",
+        "Database" : "300",
         "VerificationOption" : "UsernamePassword",
         "LogOnDetails.UserName": username,
         "tempUN" : "",
